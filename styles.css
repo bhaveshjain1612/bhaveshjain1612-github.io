@@ -1,33 +1,44 @@
+/* General Styles */
 body {
-  background-color: #121212;
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1e1e1e, #2a2a72);
+  color: #f4f4f4;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
 
 h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 a {
-  color: #00aaff;
+  color: #00e5ff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #00ccff;
+  color: #00d2ff;
 }
 
+section {
+  padding: 60px 20px;
+  margin: auto;
+  max-width: 1100px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+/* Header Styles */
 .header {
-  background-color: #1c1c1c;
-  padding: 10px 20px;
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  padding: 15px 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -36,29 +47,96 @@ a:hover {
 }
 
 .navbar a {
-  color: #ffffff;
   margin: 0 15px;
-  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #00ccff;
+  color: #00ffcc;
+}
+
+/* Animation for Sections */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: 80px auto 40px auto; /* Adds space under fixed header */
+  padding: 80px 20px;
+  margin-top: 60px;
 }
 
-button {
-  background-color: #00aaff;
-  color: #ffffff;
-  border: none;
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: -webkit-linear-gradient(#00e5ff, #00ff6c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Resume Button */
+.resume-download a {
+  display: inline-block;
   padding: 10px 20px;
-  cursor: pointer;
+  margin-top: 20px;
+  background-color: #00ff6c;
+  color: #121212;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 25px;
+  transition: all 0.3s;
 }
 
-button:hover {
-  background-color: #00ccff;
+.resume-download a:hover {
+  background-color: #00e5ff;
+  color: #ffffff;
+}
+
+/* Image Hover Effect */
+a img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+a img:hover {
+  transform: scale(1.05);
+}
+
+/* Instagram Icon */
+.instagram-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.instagram-link img {
+  width: 40px;
+  transition: transform 0.3s ease;
+}
+
+.instagram-link img:hover {
+  transform: scale(1.2);
 }
