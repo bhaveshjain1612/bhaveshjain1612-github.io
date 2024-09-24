@@ -1,7 +1,7 @@
 /* General Styles */
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #1e1e1e, #2a2a72);
+  background: linear-gradient(135deg, #333333, #1c1c1c);
   color: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ section {
 
 /* Header Styles */
 .header {
-  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  background: linear-gradient(135deg, #444444, #222222);
   padding: 15px 0;
   position: fixed;
   top: 0;
@@ -80,20 +80,30 @@ h2 {
   font-size: 36px;
   margin-bottom: 20px;
   text-align: center;
-  background: -webkit-linear-gradient(#00e5ff, #00ff6c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  color: #00ff6c;
 }
 
 h3 {
   font-size: 28px;
   margin-bottom: 15px;
+  font-style: italic;
+  color: #00e5ff;
 }
 
 p {
   font-size: 18px;
   line-height: 1.8;
   text-align: justify;
+}
+
+/* Bold and Italic Text */
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
 }
 
 /* Resume Button */
